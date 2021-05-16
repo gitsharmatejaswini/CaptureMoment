@@ -1,0 +1,131 @@
+<head>
+  <style>
+    form {
+      align-items: center;
+    }
+    body {
+      background: url(mountain.jpg);
+      background-repeat: no-repeat;
+      background-size: 150% 150%;
+    }
+    #button {
+      background-color: transparent;
+    }
+    #role,
+    #email {
+      background-color: cornsilk;
+      color: black;
+    }
+    #email,
+    #first,
+    #last,
+    #role,
+    #dob,
+    #psw,
+    #psw-repeat {
+      height: 35px;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <div class="container" ng-controller="generalCtrl">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="text"
+              ng-model="gemail"
+              placeholder="email"
+              id="email"
+              required
+              disabled
+            />
+          </div>
+        </div>
+        <div class="row">
+          <!-- <div class="col-sm-3"><b>Email:</b></div> -->
+          <div class="col-sm-6">
+            <input
+              type="text"
+              placeholder="firstname"
+              ng-model="gfirstname"
+              id="firstname"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="text"
+              placeholder="lastname"
+              ng-model="glastname"
+              id="last"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="text"
+              ng-model="gdob"
+              placeholder="dob"
+              id="dob"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="text"
+              id="role"
+              ng-model="grole"
+              name="role"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-sm-6">
+              <input
+                type="password"
+                placeholder="Enter Password"
+                id="psw"
+                ng-model="password"
+                name="psw"
+                required
+              />
+            </div> -->
+        <!-- </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <input
+                type="password"
+                placeholder="Repeat Password"
+                id="psw-repeat"
+                name="psw-repeat"
+              />
+            </div>
+          </div> -->
+        <hr />
+
+        <div class="form-group" ng-controller="generalupdateCtrl">
+          <button
+            type="submit"
+            id="button"
+            ng-click="updategeneral()"
+            class="Registerbtn"
+          >
+            Update
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>

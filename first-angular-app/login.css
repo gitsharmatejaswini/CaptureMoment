@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .big-text
+{
+	font-size: 52px;
+	margin: 20px 0;
+	color: black;
+} */
+
+.city {
+  border: 3px solid #f1f1f1;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.form-group {
+  align-items: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: Blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 20%;
+}
+.imgconatiner {
+  text-align: centre;
+  margin: 25px 0 12px 0;
+  border-radius: 50px;
+}
+form-group {
+  font-size: large;
+}
+button a {
+  color: white;
+}

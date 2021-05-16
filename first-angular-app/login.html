@@ -1,0 +1,85 @@
+<head>
+	<link rel="stylesheet" href="./login.css">
+	<style>
+	body{  background: url(aeroplane.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+	}
+	/* .btn btn-primary{
+		border-radius: 50%;
+	} */
+	/* #round{
+		border-radius: 45%;
+	} */
+	.avtaar{
+		width: 20%;
+  height: 200px;
+	}
+	form{
+		top:20%;
+	}
+	</style>
+</head>
+<body>
+	<!-- <div ng-controller="mycontroller">
+	<nav class="navbar navbar-style">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+			           <a href=""><img class="logo" src="logo.jpg"></a>
+				</div>
+
+				<div  class="collapse navbar-collapse" id="micon">
+
+				   <ul class="nav navbar-nav navbar-right">
+					<li><a href="website.html">Home</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="Login.html">Login</a></li>
+					<li><a href="Register.html">Register</a></li>
+					<li><a href="">Contact US</a></li>
+				   </ul>
+				</div>
+
+			</div>
+
+
+		</nav> -->
+	<!-- <H1>WELCOME TO LOGIN PAGE!!!!</H1> -->
+	<form  ng-submit="clicked()" class="city">
+		<div class="imgconatiner">
+			<img src="Avtaar.jpg" class="avtaar">
+		</div>
+
+	    <div class="container" ng-controller="login">
+           <div class="form-group">
+         <input type="text" name="username"  placeholder="email"    id="username" ng-model="email" class="form-control" required><br>
+           </div>
+
+	    	<div class="form group">
+	    		 <input type="password" placeholder="Password" name="password" ng-model="password" class="form-control" required>
+
+	    	</div>
+	    	<div   class="form-actions" >
+				<button type="submit" ng-click="detail()"  id="round" class="btn btn-primary" ><b>Login</b></button>
+				
+			
+	    		<a href="#register"><button type="Submit" class="btn btn-primary">Sign Up</button></a>
+				 <br>
+				 <br>
+	    	</div>
+
+
+
+
+
+	     </div>
+
+
+	</form>
+</div>
+</body>

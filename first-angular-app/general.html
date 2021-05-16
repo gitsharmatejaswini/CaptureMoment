@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      body{
+        background: url(Sea.jpg);
+        
+
+        
+       
+      }
+      #button{
+        margin-left: 30px;
+      }
+      
+      th,
+      td {
+        width: 20%;
+        text-align: center;
+      }
+      table {
+          background-color: lightblue;
+        margin-left: 7%;
+        margin-right: 7%;
+    
+      }
+      #input{
+          width: 50%;
+          margin-left: 7%;
+          height: 30px;
+
+      }
+      .form-area{
+          position: absolute;
+          top:60%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 450px;
+          height: 300px;
+          box-sizing: border-box;
+          background: rgba(0,0,0,0.5);
+          padding: 40px;
+
+      }
+      button{
+          background-color:lightslategrey;
+          width: 30%;
+          height: 30px;
+          margin-top: 5px;
+          padding-top: 3px;
+          padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="form-area">
+  <div ng-controller="generalCtrl">
+    <!-- <input type="text" id="input" name="email" ng-model="email" />
+    <button type="submit" ng-click="general()">Profile</button> -->
+  </br>
+</br>
+    <table> 
+      <tr>
+        <td><b>Email</b></td>
+        <td>{{email}}</td>
+      </tr>
+      <tr>
+        <td><b>Firstname</b></td>
+        <td>{{firstname}}</td>
+      </tr>
+      <tr>
+        <td><b>Lastname</b></td>
+        <td>{{lastname}}</td>
+      </tr>
+     
+      <tr>
+        <td><b>DOB</b></td>
+        <td>{{dob}}</td>
+      </tr>
+      <tr>
+        <td><b>Role</b></td>
+        <td>{{role}}</td>
+      </tr>
+      <!-- <tr>
+        <td><b>Password</b></td>
+        <td>{{password}}</td>
+      </tr> -->
+    </table>
+    <br>
+    <button id="button" ng-click="logout()">Logout</button>
+    <button ng-click="edit(email,firstname,lastname,dob,role)" >Edit</button>
+  </div>
+</div>
+</body>
+</html>

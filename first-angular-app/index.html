@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+
+   <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Piedra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./login.css">
+      <link rel="stylesheet" href="./register.css">
+      <style>
+      /* body{  background: url(block.jpg);
+  background-repeat: no-repeat;
+  background-size: 150% 150%;
+
+      } */
+      header{
+        background-color: white;
+      }
+      #capture{
+        width:12%;
+        margin-left: 7%;
+        height:15%;
+      }
+      /* #capture{
+        height: 5%;
+      } */
+      .nav-link{
+        color: white;
+      }
+     
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+<body ng-app="ht">
+  <header>
+    <img id="capture"  src="capturelogo.jpg">
+  </header>
+   <!-- <nav class="navbar navbar-style">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+			           <a href=""><img class="logo" src="logo.jpg"></a>
+				</div>
+
+				<div  class="collapse navbar-collapse" id="micon">
+
+				   <ul class="nav navbar-nav navbar-right">
+					<li><a href="/website.html">Home</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="Login.html">Login</a></li>
+					<li><a href="Register.html">Register</a></li>
+					<li><a href="">Contact US</a></li>
+				   </ul>
+				</div>
+
+			</div>
+
+
+		</nav>
+  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="#"><img class="logo" src=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto " >
+
+      </ul>
+      <a class="nav-link" href="#/website">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">About us</a>
+      <a class="nav-link" href="#/Login">Log in</a>
+      <a class="nav-link" href="#/register">Register</a>
+      <a class="nav-link" href="#">Contact us</a>
+
+    </div>
+  </nav>
+
+
+
+
+
+
+    <div ng-view>
+
+    </div>
+    <!--  <script>
+
+var mymodule = angular.module("ht",["ngRoute"]);
+mymodule.config(function($routeProvider){
+    $routeProvider
+    .when("/",{
+        templateUrl : "/website.html"
+    })
+    .when("/website",{
+        templateUrl : "/website.html"
+    })
+    .when("/Login",{
+        templateUrl : "/login.html"
+    })
+
+    .when("/register",{
+        templateUrl : "Register.html"
+
+    });
+});
+mymodule.controller('SearchController', function ($scope, $http, $location) {
+
+
+   $scope.changeview = function () {
+       $location.path('/Login');
+   }
+
+});
+mymodule.controller("mycontroller", function($scope){
+
+  $scope.detail= function(){
+    alert("You Pressed Login.");
+  }
+
+});
+mymodule.controller("register", function($scope){
+  $scope.clicked = function () {
+          window.location = "#/register";}
+});
+
+
+
+
+
+     </script> -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>

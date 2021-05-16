@@ -1,0 +1,99 @@
+<head>
+  <style>
+    form {
+      align-items: center;
+    }
+    body {
+      background: url(mountain.jpg);
+      background-repeat: no-repeat;
+      background-size: 150% 150%;
+    }
+    #button {
+      background-color: transparent;
+    }
+    #email {
+      background-color: cornsilk;
+      color: black;
+    }
+    #email,
+    #first,
+    #last,
+    #role,
+    #dob,
+    #psw,
+    #psw-repeat {
+      height: 35px;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <div class="container" ng-controller="updateCtrl">
+      <div class="form-group">
+        <div class="row">
+          <!-- <div class="col-sm-3"><b>Email:</b></div> -->
+          <div class="col-sm-6">
+            <input type="text" ng-model="editdata" id="email" disabled />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="text" ng-model="editfirstname" id="first" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="text" ng-model="editlastname" id="last" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="text" ng-model="editrole" id="role" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="text" id="dob" ng-model="editdob" required />
+          </div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="password"
+              placeholder="Enter Password"
+              id="psw"
+              ng-model="password"
+              name="psw"
+              required
+            />
+          </div> -->
+        <!-- </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              id="psw-repeat"
+              name="psw-repeat"
+            />
+          </div>
+        </div> -->
+        <hr />
+
+        <div class="form-group">
+          <button
+            type="submit"
+            id="button"
+            ng-click="update()"
+            class="Registerbtn"
+          >
+            Update
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>

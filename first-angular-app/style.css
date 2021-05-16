@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  height: 100vh;
+}
+.navbar-style {
+  box-shadow: 0 5px 10px #efefef;
+  text-transform: uppercase;
+  background-color: #00ced1;
+}
+.logo {
+  height: 48px;
+  padding: 2px 10px;
+}
+.icon-bar {
+  background: white;
+}
+li a {
+  color: black;
+}
+.big-text {
+  font-size: 52px;
+  margin: 20px 0;
+  color: black;
+}
+.micon {
+  background-color: white;
+}
+
+a.btn-first {
+  background-color: white;
+  color: black;
+  margin: 13px 12px 12px 10px;
+  border: 1px solid black;
+  width: 80%;
+}
+#hello {
+  background-color: #5f9ea0;
+  border: 1px solid black;
+  color: #333;
+  height: 40px;
+  margin: 13px 12px 12px 10px;
+  width: 100px;
+}
+a.btn-second {
+  background-color: white;
+  border: 1px solid black;
+  color: #333;
+  margin: 13px 12px 12px 10px;
+  width: 80%;
+}
+.a.btn btn-second {
+  margin: 13px 12px 12px 10px;
+}
